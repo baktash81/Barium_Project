@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cloudhopper:ch-commons-charset:3.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.cloudhopper" artifactId="ch-commons-charset" version="3.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudhopper/ch-commons-charset/3.0.2/230abc45b7cda10b862f4833849f5d8d93efb9a0/ch-commons-charset-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Navbar -->
+
+    <EditText
+        android:id="@+id/number_input"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@id/navbar"
+        android:layout_margin="10dp"
+        android:hint="Enter a number"
+        android:inputType="number" />
+
+
+    <!-- Number input -->
+
+
+    <!-- Text input -->
+
+    <!-- Submit button -->
+
+
+    <TextView
+        android:id="@+id/textView_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_input"
+        android:layout_marginLeft="17dp"
+        android:text="Location:" />
+
+    <TextView
+        android:id="@+id/textView_loc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loc_input"
+        android:layout_marginLeft="17dp"
+        android:text="Signal Strength:" />
+
+    <TextView
+        android:id="@+id/textView_loc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value_input"
+        android:layout_marginLeft="16dp"
+        android:text="Cell Info:" />
+
+    <EditText
+        android:id="@+id/loc_input"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@id/textView_loc"
+        android:layout_margin="10dp"
+        android:hint="Location"
+        android:inputType="text|textImeMultiLine|textMultiLine" />
+
+    <EditText
+        android:id="@+id/value_input"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@id/textView_loc2"
+        android:layout_margin="10dp"
+        android:hint="Signal Strength"
+        android:inputType="text|textImeMultiLine|textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+            <!-- Sms button -->
+            <ImageButton
+                android:id="@+id/sms_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackground"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/baseline_sms_24"
+                android:visibility="invisible" />
+
+            <!-- Settings button -->
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@android:drawable/ic_dialog_info" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Send"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/start_id"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#F44336"
+        android:text="Start"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="309dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textView_loc3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="#B3B0B0"
+        android:scrollbarStyle="outsideOverlay">
+
+        <TextView
+            android:id="@+id/cell_info_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/status_sm_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_id"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="The message has been successfully sent. "
+        android:textColor="@color/teal_700"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/status_sa_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_sm_textview"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Acknowledgment has been received."
+        android:textColor="@color/teal_700"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/status_fa_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_sm_textview"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Acknowledgment hasn't been received yet."
+        android:textColor="#910101"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/status_fm_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_button"
+        android:layout_margin="40dp"
+        android:text="The message wasn't sent. \nPlease try again. "
+        android:textColor="#910101"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/send_button"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/crypt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="30dp"
+            android:text="result" />
+
+        <Button
+            android:id="@+id/crypt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Crypt" />
+
+        <TextView
+            android:id="@+id/decrypt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="30dp"
+            android:text="result" />
+
+        <Button
+            android:id="@+id/decrypt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="deCrypt" />
+
+        <TextView
+            android:id="@+id/hash_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="30dp"
+            android:text="result" />
+
+
+        <Button
+            android:id="@+id/hash_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Hash" />
+
+    </LinearLayout>
+
+</RelativeLayout>

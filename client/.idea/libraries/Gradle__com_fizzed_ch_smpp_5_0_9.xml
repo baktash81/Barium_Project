@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fizzed:ch-smpp:5.0.9" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.fizzed" artifactId="ch-smpp" version="5.0.9" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fizzed/ch-smpp/5.0.9/29cb143032ba6479dba38ae344e1379c53c43f37/ch-smpp-5.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cloudhopper:ch-commons-util:6.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.cloudhopper" artifactId="ch-commons-util" version="6.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudhopper/ch-commons-util/6.0.2/46a4649c2f14e6ed293b3cf94d32d9510a5e79b5/ch-commons-util-6.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
